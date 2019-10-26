@@ -1,0 +1,406 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+/*AGREGANDO ESTILOS AL ENCABEZADO*/
+header{
+  width: 100%;
+  background-image: url("../assets/img/estudiante.jpg");
+  height: 100vh;
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+  .contenedor-slogan{
+    
+
+    width:80%;
+    text-align: center;
+  }
+
+    .slogan{
+      font-size:40px;
+      color: #ffa;
+      text-shadow: 7px 7px 10px black;
+      font-family: 'Contrail One', cursive;
+      transition-property: font-size;
+      transition-duration: 1s;
+
+    }
+
+    .slogan:hover{
+  
+      font-size: 45px;
+      transition-property: font-size;
+      transition-duration: 1s;
+
+    }
+      .transition-menu{
+        transition-property: color;
+        transition-duration: 2s;
+      }
+
+      .transition-menu:hover{
+
+        color: rgba(209, 211, 63, 0.8);
+        transition-property: color;
+        transition-duration: 1s;
+
+      }
+    
+      .animation-logo{
+        animation-name: example;
+        animation-duration: 4s; 
+        animation-iteration-count: infinite; 
+      }
+
+
+      @keyframes example {
+        0%   {color: rgba(199, 211, 163, 0.8);}
+        25%  {color: rgba(96, 68, 163, 0.8);}
+        50%  {color: rgba(209, 211, 63, 0.8); }
+        75%  {color: rgba(74, 211, 63, 0.8); }
+        100% {color: rgba(221, 68, 28, 0.8);}
+      }
+
+
+
+
+
+  nav{
+    width: 100%;
+    height:75px;
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    background: rgba(5, 4, 16, 0.8);
+  }
+
+    ul{
+      width:610px;
+      padding-top: 9px;
+      margin:0 auto;
+    }
+
+      nav ul li{
+        display: inline-block;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        
+        list-style: none;
+        margin: 0px 7px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+    .logo{
+      border: 2px solid #C44B15;
+      padding:5px;
+      color: #C44B15;
+      text-transform: none;
+      font-size: 30px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+
+/*AGREGANDO ESTILOS A LA SECCION "NOSOTROS" */
+.nosotros{
+  width: 100%;
+  height:100vh;
+  background-color: #EBEDEF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.descripcion{
+
+  width:100%;
+  text-transform: uppercase;
+  color: #000;
+  height: 70%;
+  width: 90%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .descripcion__titulo{
+    width: 100%;
+    font-size: 23px;
+    height: 12%;
+    font-family: 'Roboto Slab', serif;
+
+  }
+
+    .descripcion__titulo>h1{
+
+      text-align: center;
+      
+
+    }
+
+  .descripcion__mensaje{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height:88%;
+  }
+
+    .mensaje{
+      width: 40%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 10px 0 0px;
+      align-items: center;
+      height: 100%;
+    }
+
+      .mensaje>div{
+        /*height: 150px;*/
+        font-size: 13px;
+        text-align: justify;
+      }
+
+
+    .clientes{
+      width: 60%;
+      height: 100%;
+      padding:2%;
+      transition-property: padding;
+      transition-duration: 2s;
+
+    }
+
+    .clientes:hover{
+      padding:1.5%;
+      transition-property: padding;
+      transition-duration: 2s;
+    }
+
+      .clientes img{
+        width: %;
+        border-radius: 5px;
+        height: 100%;
+
+      }
+
+      .img-servicios{
+      padding:4%;
+      transition-property: padding;
+      transition-duration: 1s;
+    }
+
+      .img-servicios:hover{
+      padding:1%;
+      transition-property: padding;
+      transition-duration: 1s;
+    }
+
+      
+
+
+
+/*AGREGANDO ESTILOS A LA SECCION "MENU"*/
+.menu{
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+.plato-menu{
+  width: 100%;
+  background-image: url("../assets/img/curses.png");
+  height:55vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cartas{
+  height: 45vh;
+  width: 100%;
+}
+  .carta{
+    display: inline-block;
+    width:30%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin:0 7px;
+  }
+
+    .carta h3{
+      margin-top:10px;
+    }
+
+      .cartadiv p{
+        font-size: 15px;
+      }
+/* AGREGANDO ESTILOS A LA SECCION "EVENTOS" */
+.eventos{
+  height: 100vh;
+  width:100%;
+  
+ font-family: 'Open Sans', sans-serif;
+}
+
+  .eventos>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor-all-eventos{
+    width: 80%;
+    height: 75%;
+
+
+  }
+
+ .titulo-eventos{
+  /*font-size: 40px;*/
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.twitter {
+  display: inline-block;
+
+  width: 25%;
+}
+#vbar{
+  display: inline-block;
+  width: 1%;
+  height: 300px;
+
+}
+
+.chef-estrella{
+ display: inline-block;
+ width: 69%;
+
+ text-align: center;
+}
+.chef-estrella .margin{
+  font-family: 'Open Sans', sans-serif;
+  padding: 4px;
+
+}
+.chef-estrella .info{
+  font-size: 20px;
+
+}
+
+
+
+/* ESTILOS PARA CONTACTOS*/
+.contactos{
+  background-color: #ffffbf;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+
+.contacto_titulo_iframe_lista{
+  height: 100vh;
+  background-color: gray;
+  padding-bottom: 50px;
+}
+
+  .contactos_titulo{
+    width: 100%;
+    text-align: center;
+    height: 30%;
+    padding: 0px 0 20px 0; 
+
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+    .contactos_titulo>h1{
+      font-size: 45px;
+      font-family: 'Roboto Slab', serif;
+    }
+
+
+
+  .iframe_lista{
+    height: 70%;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+    .iframe_lista>iframe{
+      width: 60%;
+      height: 100%;
+      padding: 10px 30px 10px 30px;
+
+    }
+
+    .lista-contactos{
+      width: 40%;
+      /*display: flex;*/
+      /*flex-wrap: wrap;*/
+      /*align-items: center;*/
+      /*justify-content: center;*/
+
+      /*flex-direction: column;*/
+      
+    }
+
+      .ubicanos{
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+
+  .iconos-footer{
+
+    position: relative;
+
+    left: 20px;
+    width: 350px;
+    top: 60px;
+  }
+
+
+  .iconos-footer>li{
+    display: inline-block;
+    margin-left: 40px;
+  }
+
+    
+
+ .icon-facebook-square{
+  color: #39599f;
+  font-size: 50px;
+}
+ .icon-twitter{
+  color: #45b0e3;
+  font-size: 50px;
+}
+ .fa-instagram{
+  color: #dd356c;
+  font-size: 50px;
+}
+
